@@ -1,3 +1,3 @@
 # profit-loss
- profit and loss calculation
- profita and loss percentage calculation
+ #stock profit and loss calculation
+ #profit and loss percentage calculation
