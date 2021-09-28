@@ -11,13 +11,15 @@ btnInfo.addEventListener("click", function eventHandler() {
         var loss = costPrice - sellingPrice;
         var lossTotal = loss * st;
         var losspercent = (lossTotal * 100) / costPrice;
-        information("The loss is: " + lossTotal + " and percent is: " + losspercent);
+        var absovalue = Math.trunc(losspercent);
+        information("The loss is: " + lossTotal + " and percent is: " + absovalue);
     }
     else if (costPrice < sellingPrice) {
         var profit = sellingPrice - costPrice;
         var profitTotal = profit * st;
         var profitPercent = (profitTotal * 100) / costPrice;
-        information("The profit is: " + profitTotal + " and percent is: " + profitPercent);
+        var absvalue = Math.trunc(profitPercent);
+        information("The profit is: " + profitTotal + " and percent is: " + absvalue);
     }
     else if (costPrice == sellingPrice) {
 
